@@ -1,0 +1,315 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container  {
+    margin: 0 auto;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.logo-link {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.menu {
+    padding: 0;
+}
+.menu-item {
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu-item:hover {
+    border: 2px solid white;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation {
+    /* display: flex;
+    justify-content: center;
+    height: 50%; */
+    margin-top: 25px;
+}
+
+.promo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/background_mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 540px;
+}
+
+.promo-wrapper-content {
+    position: relative;
+    top: 40px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.title-2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    width: 80%;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.button-find-your-holiday-partner {
+    display: block;
+    width: 280px;
+    height: 38px;
+    background-color: #ff4e50;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.link-find-your-holiday-partner {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.partners-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.partners-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card {
+    margin-bottom: 20px;
+    height: auto;
+    width: 235px;
+}
+
+.photo {
+    position: relative;
+    margin: 0 auto;
+    width: 125px;
+    height: 125px;
+}
+
+.icon {
+    position: absolute;
+    background-repeat: no-repeat;
+    overflow: visible;
+    margin: 0;
+    padding:0;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+}
+
+.tv {
+    background-image: url(../img/TV.png);
+}
+
+.test-tube {
+    background-image: url(../img/test-tube.png);  
+}
+
+.coffee {
+    background-image: url(../img/coffee.png);
+}
+
+.telegram {
+    background-image: url(../img/telegram.png);
+}
+
+.partner-photo {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 60px;
+    z-index: 0;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #333333;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    color: #858585;
+    margin: 0;
+    padding: 0;
+}
+
+.button-see-other-partners {
+    display: block;
+    width: 280px;
+    height: 38px;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    border-radius: 30px;
+    border: solid 2px #ff4e50;
+}
+
+.link-see-other-partners {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color:#ff4e50;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+
+    .promo-wrapper {
+        background-image: url(../img/background_tablet.png);
+        width: 100%;
+        height: 700px;
+    }
+
+    .header {
+        flex-direction: row;
+        height: 110px;
+    }
+
+    .navigation {
+        margin-right: 60px;
+    }
+
+    .logo {
+        margin-left: 40px;
+    }
+
+    .promo-wrapper-content {
+        top: 0;
+        height: 250px;
+    }
+
+    .title {
+        font-size: 52px;
+        line-height: 55px;
+    }
+    
+    .title-2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .partners-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .button-see-other-partner {
+        align-items: center;
+    }   
+}
+
+@media (min-width: 1440px) {
+
+    .navigation {
+        margin-right: 250px;
+    }
+
+    .logo {
+        margin-left: 250px;
+    }
+
+    .promo-wrapper {
+        background-image: url(../img/background_desktop.png);
+    }
+
+    .card-wrapper {
+        flex-wrap: nowrap;
+    }
